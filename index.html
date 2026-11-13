@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Derivations Physics Class 12 — SlideShare Viewer</title>
+  
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+          },
+          aspectRatio: {
+            'slide': '610 / 515',
+          },
+          keyframes: {
+            shimmer: {
+              '100%': { transform: 'translateX(100%)' },
+            },
+          },
+          animation: {
+            shimmer: 'shimmer 1.8s infinite',
+          },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="min-h-screen font-sans antialiased transition-colors duration-300 bg-slate-100 text-slate-900 dark:bg-slate-950 dark:text-slate-100 selection:bg-indigo-500 selection:text-white flex flex-col justify-center py-6 px-3 sm:px-6 lg:px-8">
+
+  <!-- Decorative Ambient Background Glow -->
+  <div class="fixed inset-0 overflow-hidden pointer-events-none -z-10" aria-hidden="true">
+    <div class="absolute -top-24 left-1/2 -translate-x-1/2 w-[36rem] h-[20rem] rounded-full bg-indigo-500/10 dark:bg-indigo-500/15 blur-3xl"></div>
+    <div class="absolute bottom-0 right-1/4 w-[28rem] h-[18rem] rounded-full bg-sky-500/10 dark:bg-sky-500/10 blur-3xl"></div>
+  </div>
+
+  <!-- Main Viewer Container -->
+  <main id="viewerContainer" class="w-full max-w-5xl mx-auto transition-all duration-300 ease-out">
+    
+    <!-- Elevated Glassmorphic Frame Card -->
+    <div id="frameCard" class="rounded-2xl overflow-hidden border border-slate-200/80 dark:border-slate-800/90 bg-white/85 dark:bg-slate-900/80 backdrop-blur-xl shadow-xl shadow-slate-900/5 dark:shadow-black/40 transition-all duration-300">
+      
+      <!-- Top Header / Toolbar -->
+      <header class="px-4 py-3.5 sm:px-6 sm:py-4 border-b border-slate-200/80 dark:border-slate-800/90 flex flex-col md:flex-row md:items-center md:justify-between gap-3.5">
+        
+        <!-- Left: Document Metadata & Attribution -->
+        <div class="flex items-start sm:items-center gap-3.5 min-w-0">
+          <!-- Presentation Icon Badge -->
+          <div class="shrink-0 w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-gradient-to-br from-indigo-500 to-blue-600 text-white flex items-center justify-center shadow-md shadow-indigo-500/20">
+            <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 13h6m-6 4h4" />
+            </svg>
+          </div>
+
+          <div class="min-w-0 flex-1">
+            <div class="flex flex-wrap items-center gap-2 mb-0.5">
+              <span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold tracking-wide bg-indigo-50 text-indigo-700 border border-indigo-200/70 dark:bg-indigo-500/15 dark:text-indigo-300 dark:border-indigo-500/30">
+                Physics &bull; Class 12
+              </span>
+              <span class="hidden sm:inline-flex items-center text-xs text-slate-400 dark:text-slate-500">
+                SlideShare Deck
+              </span>
+            </div>
+
+            <h1 class="text-base sm:text-lg font-bold tracking-tight text-slate-900 dark:text-white truncate" title="All Derivations Physics Class 12 (all-derivations-physics-class-12-1-pdf)">
+              All Derivations Physics Class 12
+            </h1>
+
+            <p class="text-xs text-slate-500 dark:text-slate-400 truncate mt-0.5">
+              Uploaded by
+              <a
+                href="https://www.slideshare.net/amruthareddyparakala"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="font-medium text-indigo-600 dark:text-indigo-400 hover:underline focus:outline-none focus:ring-2 focus:ring-indigo-500 rounded"
+              >
+                @amruthareddyparakala
+              </a>
+              <span class="mx-1.5 text-slate-300 dark:text-slate-700">&bull;</span>
+              <span class="font-mono text-[11px] text-slate-400 dark:text-slate-500">all-derivations-physics-class-12-1-pdf</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Right: Interactive Toolbar Controls -->
+        <div class="flex items-center flex-wrap gap-2 shrink-0">
+          
+          <!-- Aspect Ratio Switcher (4:3 / 16:10) -->
+          <button
+            id="aspectToggleBtn"
+            type="button"
+            title="Switch between 4:3 (Original) and 16:10 Widescreen aspect ratio"
+            class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-medium border border-slate-200 dark:border-slate-700/80 bg-slate-50 hover:bg-slate-100 dark:bg-slate-800/70 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200 transition-colors cursor-pointer"
+          >
+            <svg class="w-3.5 h-3.5 text-slate-500 dark:text-slate-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <rect x="3" y="5" width="18" height="14" rx="2" />
+            </svg>
+            <span id="aspectLabel">4:3 Fit</span>
+          </button>
+
+          <!-- Theater / Expand Width Toggle -->
+          <button
+            id="theaterToggleBtn"
+            type="button"
+            title="Toggle Theater Mode (Expand Width)"
+            class="hidden md:inline-flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-medium border border-slate-200 dark:border-slate-700/80 bg-slate-50 hover:bg-slate-100 dark:bg-slate-800/70 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200 transition-colors cursor-pointer"
+          >
+            <svg id="theaterIconExpand" class="w-3.5 h-3.5 text-slate-500 dark:text-slate-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 8V6a2 2 0 012-2h2M4 16v2a2 2 0 002 2h2m8-16h2a2 2 0 012 2v2m0 8v2a2 2 0 01-2 2h-2" />
+            </svg>
+            <span id="theaterLabel">Theater</span>
+          </button>
+
+          <!-- Fullscreen Toggle -->
+          <button
+            id="fullscreenBtn"
+            type="button"
+            title="Enter Fullscreen"
+            class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-medium border border-slate-200 dark:border-slate-700/80 bg-slate-50 hover:bg-slate-100 dark:bg-slate-800/70 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200 transition-colors cursor-pointer"
+          >
+            <svg class="w-3.5 h-3.5 text-slate-500 dark:text-slate-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+            </svg>
+            <span>Fullscreen</span>
+          </button>
+
+          <!-- Theme Switcher (Light/Dark) -->
+          <button
+            id="themeToggleBtn"
+            type="button"
+            aria-label="Toggle Light or Dark Mode"
+            title="Switch Light / Dark Theme"
+            class="p-2 rounded-xl border border-slate-200 dark:border-slate-700/80 bg-slate-50 hover:bg-slate-100 dark:bg-slate-800/70 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-200 transition-colors cursor-pointer"
+          >
+            <!-- Sun Icon (shown in dark mode) -->
+            <svg id="sunIcon" class="w-4 h-4 hidden dark:block text-amber-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="5" />
+              <path stroke-linecap="round" d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+            </svg>
+            <!-- Moon Icon (shown in light mode) -->
+            <svg id="moonIcon" class="w-4 h-4 block dark:hidden text-slate-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+            </svg>
+          </button>
+
+          <!-- External Open on SlideShare Button -->
+          <a
+            href="https://www.slideshare.net/slideshow/all-derivations-physics-class-12-1-pdf/275639131"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl text-xs font-semibold text-white bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-700 shadow-sm shadow-indigo-600/25 transition-all"
+          >
+            <span>Open on SlideShare</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+            </svg>
+          </a>
+        </div>
+      </header>
+
+      <!-- Responsive Presentation Stage -->
+      <div id="stageWrapper" class="relative w-full bg-slate-200/70 dark:bg-slate-950/90 transition-all duration-300">
+        
+        <!-- Aspect Ratio Box (Defaults to 610:515 native SlideShare ratio on mobile/desktop without clipping) -->
+        <div id="aspectBox" class="relative w-full aspect-[4/3] sm:aspect-slide max-h-[82vh] mx-auto overflow-hidden">
+          
+          <!-- Loading Skeleton & Spinner Overlay -->
+          <div
+            id="loadingOverlay"
+            class="absolute inset-0 z-10 flex flex-col items-center justify-center bg-slate-100 dark:bg-slate-900 transition-opacity duration-500"
+          >
+            <!-- Subtle Shimmer Effect -->
+            <div class="absolute inset-0 -translate-x-full animate-shimmer bg-gradient-to-r from-transparent via-white/30 dark:via-white/5 to-transparent pointer-events-none"></div>
+            
+            <!-- Spinner -->
+            <div class="relative flex items-center justify-center mb-3">
+              <div class="w-11 h-11 rounded-full border-4 border-slate-300 dark:border-slate-700"></div>
+              <div class="w-11 h-11 rounded-full border-4 border-indigo-600 dark:border-indigo-400 border-t-transparent animate-spin absolute"></div>
+            </div>
+            
+            <p class="text-sm font-medium text-slate-700 dark:text-slate-200">Loading Presentation...</p>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Fetching slides from SlideShare</p>
+          </div>
+
+          <!-- Responsive SlideShare Embed Iframe -->
+          <iframe
+            id="slideshareIframe"
+            src="https://www.slideshare.net/slideshow/embed_code/key/pklghQ2syORdST"
+            title="All Derivations Physics Class 12 - SlideShare Presentation"
+            class="absolute inset-0 w-full h-full border-0 opacity-0 transition-opacity duration-500"
+            allowfullscreen
+            webkitallowfullscreen
+            mozallowfullscreen
+            scrolling="no"
+            loading="eager"
+          ></iframe>
+        </div>
+      </div>
+
+      <!-- Bottom Attribution & Viewing Tips Footer -->
+      <footer class="px-4 py-3 sm:px-6 bg-slate-50/80 dark:bg-slate-900/95 border-t border-slate-200/80 dark:border-slate-800/90 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 text-xs text-slate-500 dark:text-slate-400">
+        
+        <!-- Keyboard & Interaction Tips -->
+        <div class="flex flex-wrap items-center gap-x-3 gap-y-1">
+          <span class="inline-flex items-center gap-1.5">
+            <kbd class="px-1.5 py-0.5 text-[10px] font-semibold bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded shadow-2xs text-slate-600 dark:text-slate-300">&larr;</kbd>
+            <kbd class="px-1.5 py-0.5 text-[10px] font-semibold bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded shadow-2xs text-slate-600 dark:text-slate-300">&rarr;</kbd>
+            <span>Click inside slides to navigate with arrow keys</span>
+          </span>
+          <span class="hidden md:inline text-slate-300 dark:text-slate-700">|</span>
+          <span class="hidden md:inline">Pinch or use player controls to zoom</span>
+        </div>
+
+        <!-- Source Links -->
+        <div class="flex items-center gap-1.5 truncate">
+          <span>Source:</span>
+          <a
+            href="https://www.slideshare.net/slideshow/all-derivations-physics-class-12-1-pdf/275639131"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="font-medium text-slate-700 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 underline decoration-slate-300 dark:decoration-slate-700 underline-offset-2 truncate"
+          >
+            all-derivations-physics-class-12-1-pdf
+          </a>
+          <span>by</span>
+          <a
+            href="https://www.slideshare.net/amruthareddyparakala"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="font-medium text-slate-700 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 underline decoration-slate-300 dark:decoration-slate-700 underline-offset-2"
+          >
+            amruthareddyparakala
+          </a>
+        </div>
+      </footer>
+    </div>
+  </main>
+
+  <!-- Toast Notification (for fullscreen/status messages without alert()) -->
+  <div
+    id="statusToast"
+    role="status"
+    aria-live="polite"
+    class="fixed bottom-5 right-5 z-50 pointer-events-none opacity-0 translate-y-2 transition-all duration-300 px-4 py-2.5 rounded-xl bg-slate-900 dark:bg-slate-800 text-white text-xs font-medium shadow-lg border border-slate-700/80"
+  ></div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const htmlEl = document.documentElement;
+      const viewerContainer = document.getElementById('viewerContainer');
+      const frameCard = document.getElementById('frameCard');
+      const stageWrapper = document.getElementById('stageWrapper');
+      const aspectBox = document.getElementById('aspectBox');
+      const iframe = document.getElementById('slideshareIframe');
+      const loadingOverlay = document.getElementById('loadingOverlay');
+      
+      const themeToggleBtn = document.getElementById('themeToggleBtn');
+      const theaterToggleBtn = document.getElementById('theaterToggleBtn');
+      const theaterLabel = document.getElementById('theaterLabel');
+      const aspectToggleBtn = document.getElementById('aspectToggleBtn');
+      const aspectLabel = document.getElementById('aspectLabel');
+      const fullscreenBtn = document.getElementById('fullscreenBtn');
+      const statusToast = document.getElementById('statusToast');
+
+      let isTheater = false;
+      let isWidescreen = false;
+      let toastTimeout;
+
+      // Helper: Show subtle non-blocking status toast
+      function showToast(message) {
+        clearTimeout(toastTimeout);
+        statusToast.textContent = message;
+        statusToast.classList.remove('opacity-0', 'translate-y-2');
+        statusToast.classList.add('opacity-100', 'translate-y-0');
+        toastTimeout = setTimeout(() => {
+          statusToast.classList.remove('opacity-100', 'translate-y-0');
+          statusToast.classList.add('opacity-0', 'translate-y-2');
+        }, 2400);
+      }
+
+      // 1. Handle Iframe Load & Fade Out Skeleton
+      function revealIframe() {
+        iframe.classList.remove('opacity-0');
+        iframe.classList.add('opacity-100');
+        loadingOverlay.classList.add('opacity-0', 'pointer-events-none');
+        setTimeout(() => {
+          loadingOverlay.style.display = 'none';
+        }, 500);
+      }
+
+      iframe.addEventListener('load', revealIframe);
+      // Fallback timeout in case slow third-party scripts delay the load event
+      setTimeout(revealIframe, 4500);
+
+      // 2. Light / Dark Theme Switcher
+      themeToggleBtn.addEventListener('click', () => {
+        const isDark = htmlEl.classList.toggle('dark');
+        showToast(isDark ? 'Dark theme enabled' : 'Light theme enabled');
+      });
+
+      // 3. Theater Mode (Expands container from max-w-5xl to max-w-7xl)
+      theaterToggleBtn.addEventListener('click', () => {
+        isTheater = !isTheater;
+        if (isTheater) {
+          viewerContainer.classList.remove('max-w-5xl');
+          viewerContainer.classList.add('max-w-[96vw]');
+          theaterLabel.textContent = 'Default';
+          showToast('Theater mode enabled');
+        } else {
+          viewerContainer.classList.remove('max-w-[96vw]');
+          viewerContainer.classList.add('max-w-5xl');
+          theaterLabel.textContent = 'Theater';
+          showToast('Standard width restored');
+        }
+      });
+
+      // 4. Aspect Ratio Toggle (4:3 Native Slide Ratio vs 16:10 Widescreen)
+      aspectToggleBtn.addEventListener('click', () => {
+        isWidescreen = !isWidescreen;
+        if (isWidescreen) {
+          aspectBox.classList.remove('aspect-[4/3]', 'sm:aspect-slide');
+          aspectBox.classList.add('aspect-[16/10]');
+          aspectLabel.textContent = '16:10 Wide';
+          showToast('Switched to 16:10 widescreen aspect');
+        } else {
+          aspectBox.classList.remove('aspect-[16/10]');
+          aspectBox.classList.add('aspect-[4/3]', 'sm:aspect-slide');
+          aspectLabel.textContent = '4:3 Fit';
+          showToast('Switched to native 4:3 slide aspect');
+        }
+      });
+
+      // 5. Fullscreen API Handler (with graceful fallback to iframe fullscreen)
+      fullscreenBtn.addEventListener('click', async () => {
+        try {
+          if (!document.fullscreenElement) {
+            if (stageWrapper.requestFullscreen) {
+              await stageWrapper.requestFullscreen();
+            } else if (iframe.requestFullscreen) {
+              await iframe.requestFullscreen();
+            }
+          } else {
+            await document.exitFullscreen();
+          }
+        } catch (err) {
+          showToast('Use the fullscreen icon inside the SlideShare player bar');
+        }
+      });
+
+      // Adjust stage height when inside native fullscreen
+      document.addEventListener('fullscreenchange', () => {
+        if (document.fullscreenElement) {
+          aspectBox.classList.remove('max-h-[82vh]');
+          aspectBox.classList.add('h-screen', 'max-h-screen');
+        } else {
+          aspectBox.classList.remove('h-screen', 'max-h-screen');
+          aspectBox.classList.add('max-h-[82vh]');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
